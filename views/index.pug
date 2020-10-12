@@ -1,9 +1,12 @@
 extends layout
 
 block content
+  .container
     h1= title
     p Welcome to #{title}
     form
       input(type="text", id="textcity", name="textcity", placeholder="Enter a city")
       input(type="submit", value="Submit")
+  div.container
+    ul#cities
 
