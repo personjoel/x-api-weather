@@ -1,7 +1,12 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: aquamarine;
+  background-image: url("../pictures/maggie-hands-OKOXcB4iqcM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1a1a1a;
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -9,13 +14,62 @@ a {
 }
 
 .container{
-  border: black solid 1px;
+  border: #653F56 solid 3px;
+  background-color: #EEEEEE;
   padding: 20px;
-  background-color: darkturquoise; 
+  margin: 0 auto;
+  border-radius: 16px;
 }
 
-.page-footer .container {
+.border {
+  border-color:#A33327;
+  border-radius: 4px;
+}
+
+.page-footer .continer {
   padding: 10px;
-  background-color: white;
+  background-color: #EEEEEE;
   text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:2.5rem;
+  margin: auto;
+}
+
+.btn {
+  background-color: #FA817A;
+}
+
+.textClr {
+  color:#FA817A;
+  font-weight: 600;
+  padding-right: 25px;
+}
+
+.bgClr {
+  background-color: #EEEEEE;
+}
+.titletxt {
+  font-weight: bold;
+  color:#653F56;
+  text-shadow: 1px 1px #EEEEEE;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titlespan {
+  color: #EEEEEE;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0px 0px #EEEEEE;
+}
+
+li {
+  background-color:#FA817A ;
+  border-radius: 16px;
+  width: 40%;
+}
+
+ul {
+  list-style-type: none;
 }
