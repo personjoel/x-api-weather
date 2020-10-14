@@ -37,6 +37,6 @@ document.querySelector("form").addEventListener("submit", e => {
             document.getElementById("cities").appendChild(li);
         })
         .catch(() => {
-            console.log("Something went wrong");
+            document.getElementById("errmsg").innerHTML ="The city does not exist, please insert another city";
         });
 });
