@@ -67,7 +67,8 @@ a {
 li {
   background-color:#FA817A ;
   border-radius: 16px;
-  width: 40%;
+  width: 35%;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -77,3 +78,15 @@ ul {
 .city {
   padding: 10px;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0px;
+  }
+
+  li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
