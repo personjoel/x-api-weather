@@ -1,18 +1,20 @@
 extends layout
 
 block content
-  .container
-    h1.heading= title
-    p Welcome to #{title}
+  .container.bgClr.textClr.p-3
     form
-      input(type="radio", id="celsius" name="unit", value="1", checked="checked")
+      input(type="radio", id="celsius" name="unit", value="1", checked="checked").textClr
       | Celsius
-      input(type="radio", id="fahrenheit" name="unit", value="0")
+      br
+      input(type="radio", id="fahrenheit" name="unit", value="0").textClr
       | Fahrenheit
       br
+      node      
       br
-      input(type="text", id="textcity", name="textcity", placeholder="Enter a city", onfocus="this.value=''")
-      input(type="submit", value="Submit")
-    h4#errmsg
+      input(type="text", id="textcity", name="textcity", placeholder="Enter a city", onfocus="this.value=''").form-control
+      br
+      h4#errmsg
+      br
+      input(type="submit", value="Submit").btn.btn-danger
   div.container
     ul#cities
