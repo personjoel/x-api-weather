@@ -1,3 +1,4 @@
+var citiesUsed = new Array();
 document.querySelector("form").addEventListener("submit", e => {
     e.preventDefault();
     let cityValue = document.getElementById("textcity").value;
@@ -12,6 +13,13 @@ document.querySelector("form").addEventListener("submit", e => {
         unitValue = "imperial";
         unit = "°F"
     }
+
+    citiesUsed.forEach((city) => {
+        if(city == cityValue) {
+            console.log("City already used");
+        }
+    }
+    );
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=4d8fb5b93d4af21d66a2948710284366&units=${unitValue}`)
         .then(response => response.json())
@@ -45,6 +53,7 @@ document.querySelector("form").addEventListener("submit", e => {
         })
         .then(() => {
             document.getElementById("errmsg").innerHTML ="";
+            citiesUsed.push(cityValue);
         })
         .catch(() => {
             document.getElementById("errmsg").innerHTML ="The city does not exist, please insert another city";
