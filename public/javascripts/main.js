@@ -43,7 +43,7 @@ document.querySelector("form").addEventListener("submit", e => {
                         <span>${name}</span>
                         <sup>${sys.country}</sup>
                     </h2>
-                    <div>${main.temp}<sup>${unit}</sup></div>
+                    <div class="city">${main.temp}<sup>${unit}</sup></div>
                     <br>
                     <img src="${icon}">
                     <hr>
