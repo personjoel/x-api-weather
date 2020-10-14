@@ -5,6 +5,12 @@ block content
     h1.heading= title
     p Welcome to #{title}
     form
+      input(type="radio", id="celsius" name="unit", value="1", checked="checked")
+      | Celsius
+      input(type="radio", id="fahrenheit" name="unit", value="0")
+      | Fahrenheit
+      br
+      br
       input(type="text", id="textcity", name="textcity", placeholder="Enter a city")
       input(type="submit", value="Submit")
   div.container
