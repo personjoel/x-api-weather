@@ -43,7 +43,11 @@ document.querySelector("form").addEventListener("submit", e => {
             li.innerHTML = markup;
             document.getElementById("cities").appendChild(li);
         })
+        .then(() => {
+            document.getElementById("errmsg").innerHTML ="";
+        })
         .catch(() => {
             document.getElementById("errmsg").innerHTML ="The city does not exist, please insert another city";
         });
+
 });
