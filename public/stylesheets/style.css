@@ -73,3 +73,7 @@ li {
 ul {
   list-style-type: none;
 }
+
+.city {
+  padding: 10px;
+}
