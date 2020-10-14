@@ -1,8 +1,8 @@
 document.querySelector("form").addEventListener("submit", e => {
     e.preventDefault();
     let cityValue = document.getElementById("textcity").value;
-
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=4d8fb5b93d4af21d66a2948710284366&units=metric`)
+    let UnitsValue = document.getElementById("Unit").value;
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=4d8fb5b93d4af21d66a2948710284366&units=${UnitsValue}`)
         .then(response => response.json())
         .then(data => {
             const { main, name, sys, weather } = data;
