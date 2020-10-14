@@ -18,6 +18,10 @@ document.querySelector("form").addEventListener("submit", e => {
         .then(data => {
             const { main, name, sys, weather } = data;
             
+            const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
+                weather[0]["icon"]
+              }.svg`;
+
             //console.log(name);
 
             const li = document.createElement("li");
@@ -30,6 +34,9 @@ document.querySelector("form").addEventListener("submit", e => {
                         <sup>${sys.country}</sup>
                     </h2>
                     <div>${main.temp}<sup>${unit}</sup></div>
+                    <br>
+                    <img src="${icon}">
+                    <hr>
                 </div>
             `;
 
