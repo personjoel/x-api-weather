@@ -16,7 +16,7 @@ document.querySelector("form").addEventListener("submit", e => {
     }
 
     citiesUsed.forEach((city) => {
-        if(city == cityValue) {
+        if(city.toLowerCase() == cityValue.toLowerCase()) {
             console.log("City already used");
             document.getElementById("errmsg").innerHTML ="This city already exist";
             newCity = false;
