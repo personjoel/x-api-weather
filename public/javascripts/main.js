@@ -47,7 +47,6 @@ document.querySelector("form").addEventListener("submit", e => {
                     <div class="city">${main.temp}<sup>${unit}</sup></div>
                     <br>
                     <img src="${icon}">
-                    <hr>
                 </div>
             `;
 
